@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiny Odds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main" class="flexbox">
+        <div class="title">
+            Pokémon Scarlet and Violet Shiny Odds Calculator
+        </div>
+        <div class="vflexbox">
+            <div class="checkbox">
+                <input id="masuda" type="checkbox">
+                <div>Masuda Method</div>
+            </div>
+            <div class="checkbox">
+                <input id="charm" type="checkbox">
+                <div>Shiny Charm</div>
+            </div>
+            <div class="vflexbox">
+                <div class="caption">
+                    Sparkling Power Level
+                </div>
+                <select id="power">
+                    <option>none</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    
+                </select>
+            </div>
+            <div class="vflexbox">
+                <div class="checkbox">
+                    <input id="outbreak" type="checkbox">
+                    <div>Mass Outbreak</div>
+                </div>
+                <div class="vflexbox" id="massOutbreakOptions">
+                    <div class="caption">
+                    Number Defeated/Captured
+                    </div>
+                    <select id="massOutbreak">
+                        <option><30</option>
+                        <option>30-59</option>
+                        <option>>60</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div id="notification">
+
+            </div>
+        </div>
+        <div class="hflexbox" id="oddsBox">
+            <div id="odds">0</div>
+            <div>%</div>
+        </div>
+        <div class="title">Expected # of Encounters Needed</div>
+        <div class="hflexbox" id="encounterBox">
+            <div>≈</div>
+            <div id="encounters">?</div>
+        </div>
+        
+    </div>
+    <div class="flexbox">
+        <div class="vflexbox">
+            <div class="caption">
+                Encounter Type:
+            </div>
+            <select id="encounterType">
+                <option>Egg Hatching</option>
+                <option>Encounters (No encounter power)</option>
+                <option>Encounters (Encounter power lv 1)</option>
+                <option>Encounters (Encounter power lv 2)</option>
+                <option>Encounters (Encounter power lv 3)</option>
+            </select>
+            <div class="info">
+                This site uses encounter time estimates to approximate how much time a shiny huny is expected to take. <br><br>
+                Egg hatching is estimated at 60s per encounter<br>
+                Normal Encounters are estimated at 20s per encounter<br>
+                Encounter Power Lv 1 Encounters are estimated at 15s per encounter<br>
+                Encounter Power Lv 2 Encounters are estimated at 10s per encounter<br>
+                Encounter Power Lv 3 Encounters are estimated at 5s per encounter <br><br>
+                Testing will occur to ensure the validity of the estimates, but at this time, they are based on my experience playing.
+            </div>
+            <div class="title">
+                Expected time to shiny:
+            </div>
+            <div class="vflexbox" id="oddsBox">
+                <div id="expectedTime">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculation.js"></script>
+</body>
+</html>

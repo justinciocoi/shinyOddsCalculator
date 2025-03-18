@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nerko+One&family=Rubik+Iso&display=swap');
+
+.flexbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 600px;
+    border: 2px solid black;
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #702583;
+    margin: 10px;
+}
+
+.vflexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hflexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.caption {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#oddsBox {
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Coming Soon';
+    background-color:#D03932;
+    color: white;
+}
+
+select {
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input {
+    height: 20px
+}
+
+#encounters {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#encounterBox {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notification {
+    color: red;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+}
+
+#expectedTime {
+    text-align: center;
+    font-size: 40px;
+}
